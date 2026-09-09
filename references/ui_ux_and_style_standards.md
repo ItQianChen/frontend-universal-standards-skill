@@ -27,7 +27,7 @@
 
 ## 3. 多端屏幕与响应式适配方案
 
-### 3.1 移动端 H5 动态 rem 方案 (参考 `car-owner-app`)
+### 3.1 移动端 H5 动态 rem 方案
 * **原理**：`amfe-flexible` 监听屏幕变化并动态修改 `<html>` 的 `font-size`；编译期由 `postcss-pxtorem` 自动将业务代码中的 `px` 转化为 `rem`。
 * **`postcss.config.js` 配置规范**：
   ```javascript
@@ -42,7 +42,7 @@
   }
   ```
 
-### 3.2 小程序 `rpx` 响应式标准 (参考 `heima-shop`)
+### 3.2 小程序 `rpx` 响应式标准
 * 以 750rpx 作为全屏基准宽度；
 * 自定义导航栏（`"navigationStyle": "custom"`）必须通过 `uni.getSystemInfoSync()` 动态计算 `statusBarHeight` 状态栏高度以及胶囊按钮位置，防止页面内容与顶部信号栏或胶囊发生视觉重叠。
 
@@ -51,7 +51,7 @@
 ## 4. 极致用户体验与性能提升模式
 
 ### 4.1 高性能视口交叉懒加载 (`IntersectionObserver`)
-对于电商长列表、新闻瀑布流中的海量图片，严禁直接绑定 `src`，必须封装全局指令 `v-img-lazy` 进行视口交叉加载（参考 `vue-rabbit` 实践）：
+对于电商长列表、新闻瀑布流中的海量图片，严禁直接绑定 `src`，必须封装全局指令 `v-img-lazy` 进行视口交叉加载：
 ```typescript
 import { useIntersectionObserver } from '@vueuse/core'
 import type { App, DirectiveBinding } from 'vue'
