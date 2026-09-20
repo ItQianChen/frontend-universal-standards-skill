@@ -2,14 +2,6 @@
 name: frontend-universal-standards-skill
 description: >-
   前端工程化、架构分层、网络请求、状态管理、路由鉴权、多端开发与代码质量全栈规范通用 Agent Skill。适用于 Vue 3 (Composition API / Vite / Pinia / Element Plus)、React 18/19 (Hooks / RTK / Zustand / Tailwind CSS)、Uni-app / 微信小程序跨端开发 (Vue3 / TS / 分包策略 / 跨端持久化适配)、Vue 2 遗留工程维护与现代化迁移、Axios / uni.request 工业级封装、RBAC 动态权限路由守卫、五重工程质量卡点 (ESLint / Prettier / Stylelint / Husky / Commitlint)、大文件分片断点续传秒传、前端性能优化与反模式规避等任务。
-license: MIT
-metadata:
-  author: Universal Agent Skill
-  version: 1.0.0
-  category: software-engineering
-compatibility: >-
-  Works on all platforms supporting the Agent Skills Open Standard (SKILL.md):
-  Claude Code, OpenAI Codex, Cursor, Windsurf, Cline, OpenCode, Roo Code, Trae, Kiro, Goose, Antigravity, and all LLM agents.
 ---
 
 # /frontend-universal-standards-skill — 前端全栈工程化与通用开发规范
