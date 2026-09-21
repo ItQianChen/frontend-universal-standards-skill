@@ -1,7 +1,7 @@
-﻿---
+---
 name: frontend-universal-standards-skill
 description: >-
-  前端工程化、架构分层、网络请求、状态管理、路由鉴权、多端开发与代码质量全栈规范通用 Agent Skill。适用于 Vue 3 (Composition API / Vite / Pinia / Element Plus)、React 18/19 (Hooks / RTK / Zustand / Tailwind CSS)、Uni-app / 微信小程序跨端开发 (Vue3 / TS / 分包策略 / 跨端持久化适配)、Vue 2 遗留工程维护与现代化迁移、Axios / uni.request 工业级封装、RBAC 动态权限路由守卫、五重工程质量卡点 (ESLint / Prettier / Stylelint / Husky / Commitlint)、大文件分片断点续传秒传、前端性能优化与反模式规避等任务。
+  现代前端工程化开发与交付全栈规范。适用于 Vue 3 (Composition API/Vite/Pinia)、React 18/19 (Hooks/Zustand/RTK/Tailwind CSS)、Uni-app/微信小程序跨端及 Vue 2 遗留工程的项目架构、页面与组件逻辑开发、网络请求 (Axios/uni.request) 工业级封装、RBAC 动态权限路由、状态管理与跨端持久化；涵盖大文件切片秒传、TS 契约、五重代码质量卡点 (ESLint/Prettier/Husky) 等任务。专注工程架构、网络通信与状态流转（纯视觉审美参考 frontend-design，设计系统推导参考 ui-ux-pro-max，A11y走查参考 web-design-guidelines）。
 ---
 
 # /frontend-universal-standards-skill — 前端全栈工程化与通用开发规范
@@ -32,6 +32,7 @@ Agent 在为工程生成前端代码、组件或脚手架时，必须严格基�
 ## 2. 触发场景 (Trigger)
 
 当用户或 Agent 处理以下任何前端开发场景时，必须主动激活本 Skill：
+* **日常页面与组件开发**：编写或重构 Vue 3、React、Uni-app 页面与业务组件、实现表单与表格交互、数据绑定与单向数据流。
 * **前端脚手架与目录规划**：新建或重构 Vue 3、React、Uni-app 项目架构，规划 `api/`, `views/`, `components/`, `stores/`, `router/`, `utils/` 等分层结构。
 * **网络请求与 API 治理**：封装 Axios 或 `uni.request` 工业级拦截器链，配置 BaseURL 动态环境变量、Token 自动注入、401 统一重定向、业务错误码集中映射、请求取消与防重。
 * **路由设计与鉴权守卫**：配置 Vue Router 或 React Router，设计常量路由（白名单）、动态 RBAC 权限路由过滤注入、通配 404 兜底、NProgress 进度条与页面 Title 同步。
